@@ -1,2 +1,2 @@
 # join-ci
-Docker image for join continuous integration
+Docker image for join framework continuous integration
