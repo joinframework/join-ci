@@ -1,3 +1,4 @@
 FROM ubuntu:latest
-RUN apt update && apt upgrade -y
-RUN apt install libssl-dev lcov -y
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y ninja-build cmake g++
+RUN apt-get install -y libssl-dev lcov cppcheck
