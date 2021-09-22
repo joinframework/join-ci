@@ -9,7 +9,6 @@ This is an Ubuntu based docker image, with all the mandatory tools for the join 
 
 To create the docker image do this:
 ```bash
-cd join-ci
 docker build -t joinframework/join-ci .
 ```
 
