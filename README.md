@@ -16,7 +16,7 @@ docker build -t joinframework/join-ci .
 
 To run and test the docker image do this:
 ```bash
-docker run -it --rm joinframework/join-ci
+docker run -it --privileged --rm joinframework/join-ci
 ```
 
 ## Pushing image to docker hub
