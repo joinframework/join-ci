@@ -1,5 +1,5 @@
 # join-ci
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mrabine/pifan/blob/main/LICENSE)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/joinframework/join-ci/blob/main/LICENSE)
 
 Docker image for join framework continuous integration.
 
