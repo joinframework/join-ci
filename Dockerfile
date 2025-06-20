@@ -1,5 +1,8 @@
 FROM ubuntu:24.04
 
+ENV LIB=lib64
+ENV PLATFORM=linux64
+
 SHELL ["/bin/bash", "-c"]
 
 RUN echo 'APT::Install-Recommends "0";' >> /etc/apt/apt.conf.d/99local && \
