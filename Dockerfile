@@ -1,6 +1,12 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
-RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y --no-install-recommends \
-    netbase ca-certificates git build-essential cmake lcov libtrace-tools \
-    libssl-dev zlib1g-dev bridge-utils iproute2 net-tools wget curl
+RUN echo 'APT::Install-Recommends "0";' >> /etc/apt/apt.conf.d/99local && \
+    echo 'APT::Install-Suggests   "0";' >> /etc/apt/apt.conf.d/99local && \
+    echo 'APT::Get::Assume-Yes    "1";' >> /etc/apt/apt.conf.d/99local
+
+RUN apt-get update && apt-get upgrade && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp/dir
+
+COPY scripts/01*.sh .
+RUN apt-get update && bash -xe ./01*.sh && rm -rf * && rm -rf /var/lib/apt/lists/*
