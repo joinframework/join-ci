@@ -1,0 +1,12 @@
+name: pull_request
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+    with:
+      push: false
