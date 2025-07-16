@@ -28,4 +28,5 @@ apt-get -qq install \
   libicu-dev \
   libxml2-dev \
   libgtest-dev \
-  libgmock-dev
+  libgmock-dev \
+  gpg
