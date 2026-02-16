@@ -11,7 +11,10 @@ apt-get -qq install \
   unzip \
   git \
   cmake \
+  cmake-data \
+  pkg-config \
   build-essential \
+  ninja-build \
   wget \
   python3 \
   python3-pip \
@@ -24,6 +27,7 @@ apt-get -qq install \
   libjson-xs-perl \
   libcurl4-openssl-dev \
   libssl-dev \
+  libnuma-dev \
   zlib1g-dev \
   libicu-dev \
   libxml2-dev \
