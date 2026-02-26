@@ -14,6 +14,8 @@ apt-get -qq install \
   cmake-data \
   pkg-config \
   build-essential \
+  clang \
+  llvm \
   ninja-build \
   wget \
   python3 \
