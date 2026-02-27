@@ -14,6 +14,7 @@ apt-get -qq install \
   cmake-data \
   pkg-config \
   build-essential \
+  clang-format \
   clang \
   llvm \
   ninja-build \
