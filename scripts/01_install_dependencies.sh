@@ -27,6 +27,7 @@ apt-get -qq install \
   libglib2.0-0 \
   libtrace-tools \
   lcov \
+  libclang-rt-dev \
   libjson-xs-perl \
   libcurl4-openssl-dev \
   libssl-dev \
