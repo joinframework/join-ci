@@ -8,6 +8,7 @@ apt-get -qq install \
   net-tools \
   wget \
   curl \
+  openssh-client \
   rsync \
   unzip \
   git \
