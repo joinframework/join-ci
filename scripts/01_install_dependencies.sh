@@ -20,13 +20,12 @@ apt-get -qq install \
   clang \
   llvm \
   ninja-build \
-  wget \
   python3 \
   python3-pip \
   bash \
   jq \
   libc6-dev \
-  libglib2.0-0 \
+  libglib2.0-dev \
   libtrace-tools \
   lcov \
   libclang-rt-dev \
