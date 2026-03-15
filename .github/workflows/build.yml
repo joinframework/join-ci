@@ -17,6 +17,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     defaults:
       run:
         shell: bash
@@ -56,4 +59,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USER }}/join-ci:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USER }}/join-ci:buildcache,mode=max
+          cache-to: ${{ inputs.deploy && format('type=registry,ref={0}/join-ci:buildcache,mode=max', secrets.DOCKERHUB_USER) || '' }}
