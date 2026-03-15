@@ -10,4 +10,7 @@ jobs:
   check:
     uses: ./.github/workflows/build.yml
 
+    permissions:
+      contents: read
+
     secrets: inherit
