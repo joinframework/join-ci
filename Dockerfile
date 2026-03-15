@@ -16,6 +16,8 @@ RUN apt-get update && bash -xe ./01*.sh && rm -rf * && rm -rf /var/lib/apt/lists
 COPY scripts/02*.sh .
 RUN apt-get update && bash -xe ./02*.sh && rm -rf * && rm -rf /var/lib/apt/lists/*
 
+USER root
+ENV HOME=/root
 WORKDIR /github/workspace
 
 CMD ["/bin/bash"]
