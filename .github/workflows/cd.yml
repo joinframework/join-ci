@@ -1,12 +1,16 @@
-name: pr
+name: cd
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
+  workflow_dispatch:
+
 jobs:
-  test:
+  deploy:
     uses: ./.github/workflows/build.yml
+
     secrets: inherit
+
     with:
-      push: false
+      deploy: true

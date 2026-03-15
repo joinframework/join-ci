@@ -9,7 +9,12 @@ This is an Ubuntu based docker image, with all the mandatory tools for the join 
 
 To create the docker image do this:
 ```bash
-docker build -t joinframework/join-ci .
+docker buildx build --platform linux/amd64,linux/arm64 -t joinframework/join-ci .
+```
+
+To create and test locally for a single platform do this:
+```bash
+docker buildx build --platform linux/amd64 --load -t joinframework/join-ci .
 ```
 
 ## Testing image
