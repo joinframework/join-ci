@@ -40,4 +40,6 @@ docker save -o join-ci.tar joinframework/join-ci:latest
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[![Status](https://github.com/joinframework/join-ci/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/joinframework/join-ci/actions?query=workflow%3Acd+branch%3Amain)
+[![GitHub Releases](https://img.shields.io/github/release/joinframework/join-ci.svg)](https://github.com/joinframework/join-ci/releases/latest)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/joinframework/join-ci/blob/main/LICENSE)
