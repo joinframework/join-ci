@@ -32,6 +32,7 @@ apt-get -qq install \
   libjson-xs-perl \
   libcurl4-openssl-dev \
   libssl-dev \
+  liburing-dev \
   libnuma-dev \
   zlib1g-dev \
   libicu-dev \
