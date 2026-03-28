@@ -39,5 +39,5 @@ apt-get -qq install \
   libxml2-dev \
   libgtest-dev \
   libgmock-dev \
-  libgpiod \
+  libgpiod-dev \
   gpg
