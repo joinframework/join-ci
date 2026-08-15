@@ -3,6 +3,7 @@
 apt-get -qq install \
   netbase \
   ca-certificates \
+  tzdata \
   bridge-utils \
   iproute2 \
   net-tools \

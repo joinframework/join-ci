@@ -2,6 +2,8 @@ FROM ubuntu:24.04
 
 SHELL ["/bin/bash", "-c"]
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN echo 'APT::Install-Recommends "0";' >> /etc/apt/apt.conf.d/99local && \
     echo 'APT::Install-Suggests   "0";' >> /etc/apt/apt.conf.d/99local && \
     echo 'APT::Get::Assume-Yes    "1";' >> /etc/apt/apt.conf.d/99local
