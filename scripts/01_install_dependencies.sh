@@ -34,6 +34,7 @@ apt-get -qq install \
   libcurl4-openssl-dev \
   libssl-dev \
   liburing-dev \
+  libxdp-dev \
   libnuma-dev \
   zlib1g-dev \
   libicu-dev \
