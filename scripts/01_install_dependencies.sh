@@ -29,7 +29,7 @@ apt-get -qq install \
   libglib2.0-dev \
   libtrace-tools \
   lcov \
-  libclang-rt-dev \
+  libclang-rt-19-dev \
   libjson-xs-perl \
   libcurl4-openssl-dev \
   libssl-dev \
@@ -41,5 +41,4 @@ apt-get -qq install \
   libxml2-dev \
   libgtest-dev \
   libgmock-dev \
-  libgpiod-dev \
-  gpg
+  libgpiod-dev

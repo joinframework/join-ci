@@ -5,13 +5,13 @@
 
 Docker image for join framework continuous integration.
 
-This is an Ubuntu based docker image, with all the mandatory tools for the join framework project continuous integration (building and testing).
+This is a Debian based docker image, with all the mandatory tools for the join framework project continuous integration (building and testing).
 
 ## Creating image
 
 To create the docker image do this:
 ```bash
-docker buildx build --platform linux/amd64,linux/arm64 -t joinframework/join-ci .
+docker buildx build --platform linux/amd64,linux/arm64,linux/386,linux/arm/v7 -t joinframework/join-ci .
 ```
 
 To create and test locally for a single platform do this:
