@@ -31,6 +31,7 @@ apt-get -qq install \
   lcov \
   gcovr \
   gnupg \
+  file \
   libclang-rt-19-dev \
   libjson-xs-perl \
   libcurl4-openssl-dev \
