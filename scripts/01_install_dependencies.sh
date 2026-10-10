@@ -30,6 +30,7 @@ apt-get -qq install \
   libtrace-tools \
   lcov \
   gcovr \
+  gnupg \
   libclang-rt-19-dev \
   libjson-xs-perl \
   libcurl4-openssl-dev \
