@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HUGO_VERSION="0.152.2"
+HUGO_VERSION="0.167.0"
 ARCH=$(dpkg --print-architecture)
 
 if [ "$ARCH" != "amd64" ]; then
