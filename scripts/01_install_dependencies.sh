@@ -13,6 +13,7 @@ apt-get -qq install \
   rsync \
   unzip \
   git \
+  gh \
   cmake \
   cmake-data \
   pkg-config \
