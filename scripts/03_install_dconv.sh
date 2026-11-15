@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DCONV_VERSION="2.0.0"
+DCONV_VERSION="2.0.1"
 
 wget https://github.com/joinframework/dconv/releases/download/v${DCONV_VERSION}/libdconv-dev_${DCONV_VERSION}_all.deb
 apt-get -qq install ./libdconv-dev_${DCONV_VERSION}_all.deb
